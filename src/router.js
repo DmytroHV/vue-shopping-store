@@ -1,21 +1,17 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
-import About from "./views/About.vue";
+import Phones from "./views/Phones.vue";
 
 Vue.use(Router);
 
+const routes = [
+  {
+    path: "/",
+    name: "phones",
+    component: Phones
+  }
+];
+
 export default new Router({
-  routes: [
-    {
-      path: "/",
-      name: "home",
-      component: Home
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: About
-    }
-  ]
+  routes
 });
